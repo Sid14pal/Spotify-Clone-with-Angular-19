@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { Component, OnInit } from '@angular/core';
+import { faHome, faMagnifyingGlass, faUser, faCog, faBell} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -10,5 +10,9 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 export class HeaderComponent {
 
   faHome = faHome;
+  faMagniFyingGlass = faMagnifyingGlass;
+  faUser = faUser;
+  faCog = faCog;
+  faBell = faBell;
 
 }
