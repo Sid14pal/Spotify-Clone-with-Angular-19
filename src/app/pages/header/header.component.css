@@ -46,4 +46,8 @@
 
 button {
     margin: 0 5px;
-  }
+}
+
+.nav {
+    background: #f8f6ff;
+}

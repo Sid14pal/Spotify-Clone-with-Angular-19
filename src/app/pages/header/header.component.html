@@ -1,4 +1,4 @@
-<nav class="bg-gray-100 min-h-4">
+<nav class="min-h-4 bg-fixed nav fixed w-full">
     <div class="mx-auto max-w-1xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -29,7 +29,7 @@
             <img class="h-12 w-auto" src="logo.png" alt="Your Company">
           </div>
           <div class="hidden sm:ml-6 sm:block">
-            <div class="bg-violet-400 home drop-shadow-md hover:scale-125 transition cursor-pointer">
+            <div class="bg-violet-400 home drop-shadow-md hover:scale-125 transition cursor-pointer" routerLink="">
               <fa-icon [ngClass]="'fa-home'" [icon]="faHome"></fa-icon>
             </div>
           </div>
@@ -48,12 +48,16 @@
             <fa-icon [ngClass]="'fa-user'" [icon]="faUser"></fa-icon>
           </button>
           <button class="px-2 py-1 cursor-pointer hover:scale-125 transition bg-white rounded-md">
-            <fa-icon [ngClass]="'fa-user'" [icon]="faCog"></fa-icon>
-          </button>
-          <button class="px-2 py-1 cursor-pointer hover:scale-125 transition bg-white rounded-md">
             <fa-icon [ngClass]="'fa-user'" [icon]="faBell"></fa-icon>
+          </button>
+          <button (click)="toggleTheme()" class="px-2 py-1 cursor-pointer hover:scale-125 transition bg-white rounded-md">
+            <fa-icon [ngClass]="'fa-user'" [icon]="isDarkMode ? faMoon : faSun"></fa-icon>
           </button>
         </div>
       </div>
     </div>
   </nav>
+
+  
+
+  

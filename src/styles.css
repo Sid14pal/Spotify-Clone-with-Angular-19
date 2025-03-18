@@ -1,4 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import "tailwindcss";
-html, body { height: 100%; }
-body { margin: 0; font-family: "DM Sans", sans-serif }
+
+:root {
+  --main-dark-bg-color: #000000;
+  --main-dark-text-color: #ffffff;
+  --main-dark-block-color: #3d3d3d;
+}
+
+body {
+   margin: 0; font-family: "DM Sans", sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: var(--main-dark-bg-color);
+  color: var(--main-dark-text-color);
+}
+
+body.dark-mode .nav {
+  background-color: var(--main-dark-block-color);
+}
