@@ -1,0 +1,39 @@
+
+
+.group {
+	position: relative;
+}
+
+.card-img {
+	border-radius: 5px;
+	object-fit: cover;
+}
+
+.play-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #1ed760;
+	position: absolute;
+	bottom: 0px;
+	right: 19px;
+	border: none;
+	transition: all 0.3s;
+	opacity: 0;
+}
+
+.card:hover .play-button {
+	opacity: 1;
+	bottom: 30px;
+}
+
+.play-button:hover {
+	transform: scale(1.15);
+}
+
+.card-artist {
+	color: #b3b3b3;
+}

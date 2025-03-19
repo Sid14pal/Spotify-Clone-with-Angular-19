@@ -10,6 +10,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { SidebarComponent } from './pages/sidebar/sidebar.component';
 import { ContentBoxComponent } from './pages/content-box/content-box.component';
+import { MusicCardComponent } from './pages/music-card/music-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContentBoxComponent } from './pages/content-box/content-box.component';
     HeaderComponent,
     LoginComponent,
     SidebarComponent,
-    ContentBoxComponent
+    ContentBoxComponent,
+    MusicCardComponent
   ],
   imports: [
     BrowserModule,
