@@ -1,6 +1,22 @@
- 
- <div class="p-4 sm:ml-[270px]">
-    <div class="p-4 rounded-lg dark:border-gray-700 swap-top">
-      <app-music-card></app-music-card>
+<div class="p-4 sm:ml-[270px] content-box">
+  <div class="p-4 rounded-lg dark:border-gray-700 swap-top">
+    <app-nav></app-nav>
+    <p class="text-2xl font-semibold mt-5">Trending Songs</p>
+    <div class="grid grid-cols-5 gap-4 mt-5">
+      <div class="card" *ngFor="let song of songs">
+    <div class="group">
+        <img class="card-img" [src]="song.album.images[0].url" alt="{{ song.title }}">
+        <button class="play-button">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' viewBox='0 0 16 15'%3E%3Cpath d='M7.5,0,15,16H0Z' transform='translate(16) rotate(90)'/%3E%3C/svg%3E" alt="play">
+        </button>
     </div>
- </div>
+    <p class="card-title text-md font-semibold mt-1">{{ song.name }}</p>
+    <p class="card-artist">{{ song.artists[0].name }}</p>
+</div>
+
+
+
+
+    </div>
+  </div>
+</div>

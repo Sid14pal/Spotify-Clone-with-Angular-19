@@ -18,10 +18,6 @@ body.dark-mode {
   color: var(--main-dark-text-color);
 }
 
-body.dark-mode .nav {
-  background: var(--main-dark-block-color);
-}
-
 body.dark-mode .sidebar-card {
   background-color: var(--main-dark-card-color);
   color: var(--main-dark-text-color);

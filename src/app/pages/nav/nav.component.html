@@ -1,5 +1,5 @@
-<nav class="min-h-4 bg-fixed nav fixed w-full">
-    <div class="mx-auto max-w-1xl px-2 sm:px-6 lg:px-8">
+<nav class="min-h-4 nav w-full">
+    <div class="mx-auto">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
@@ -14,21 +14,13 @@
             <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
-            <!--
-              Icon when menu is open.
-  
-              Menu open: "block", Menu closed: "hidden"
-            -->
             <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
         <div class="flex flex-1 items-center justify-center sm:justify-start">
-          <div class="flex shrink-0 items-center" routerLink="">
-            <img class="h-12 w-auto" src="logo.png" alt="Your Company">
-          </div>
-          <div class="hidden sm:ml-6 sm:block">
+          <div class="">
             <div class="bg-violet-400 home drop-shadow-md hover:scale-125 transition cursor-pointer" routerLink="">
               <fa-icon [ngClass]="'fa-home'" [icon]="faHome"></fa-icon>
             </div>
@@ -37,7 +29,7 @@
             <input
                 type="text"
                 placeholder="What do you want to play?"
-                class="w-full px-4 py-2 rounded-full pl-10 bg-white hover:bg-violet-100 focus:bg-violet-100 transition shadow-sm cursor-pointer"/>
+                class="w-full px-4 py-2 rounded-full pl-10 bg-gray-100 hover:bg-violet-100 focus:bg-violet-100 transition cursor-pointer"/>
             <div class="absolute left-3 top-2.5 w-5 h-5 text-gray-400">
               <fa-icon [ngClass]="'faMagniFyingGlass'" [icon]="faMagniFyingGlass"></fa-icon>
             </div>
@@ -51,7 +43,7 @@
             <fa-icon [ngClass]="'fa-user'" [icon]="faBell"></fa-icon>
           </button>
           <button (click)="toggleTheme()" class="px-2 py-1 cursor-pointer hover:scale-125 transition bg-white rounded-md">
-            <fa-icon [ngClass]="'fa-user'" [icon]="isDarkMode ? faMoon : faSun"></fa-icon>
+            <fa-icon [ngClass]="'fa-user'" [icon]="isDarkMode ? faSun : faMoon"></fa-icon>
           </button>
         </div>
       </div>

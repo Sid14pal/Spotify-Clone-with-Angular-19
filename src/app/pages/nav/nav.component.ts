@@ -3,12 +3,12 @@ import { faHome, faMagnifyingGlass, faUser, faCog, faBell, faSun, faMoon} from '
 import { ThemeService } from '../../services/theme.service';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-nav',
   standalone: false,
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  templateUrl: './nav.component.html',
+  styleUrl: './nav.component.css'
 })
-export class HeaderComponent {
+export class NavComponent {
 
   faHome = faHome;
   faMagniFyingGlass = faMagnifyingGlass;
@@ -30,4 +30,5 @@ export class HeaderComponent {
     this.themeService.toggleTheme();
     this.isDarkMode = this.themeService.currentTheme;
   }
+
 }

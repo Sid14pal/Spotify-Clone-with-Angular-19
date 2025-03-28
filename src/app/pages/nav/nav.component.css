@@ -1,3 +1,4 @@
+
 @layer base {
     input::placeholder,
     textarea::placeholder {
@@ -46,8 +47,4 @@
 
 button {
     margin: 0 5px;
-}
-
-.nav {
-    background: #edefff;
 }
